@@ -1,0 +1,22 @@
+Algorithm to read_sentence_and_count():
+    Initialize variables:
+        sentence_length = 0
+        word_count = 0
+        vowel_count = 0
+        
+    Display "Enter a sentence ending with a point: "
+    Read input_sentence from the user
+
+    for each character in input_sentence:
+        increment sentence_length by 1
+        if character is a letter:
+            if character is a vowel (a, e, i, o, u, case-insensitive):
+                increment vowel_count by 1
+            if character is a space:
+                increment word_count by 1
+
+    increment word_count by 1  # Count the last word after the last space until the point.
+
+    Display "Sentence length:", sentence_length
+    Display "Number of words:", word_count
+    Display "Number of vowels:", vowel_count
